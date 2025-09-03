@@ -18,11 +18,17 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Web3/Blockchain specific variants
+        hero: "bg-gradient-cyber text-primary-foreground hover:shadow-cyber hover:scale-105 transition-all duration-300 font-semibold",
+        cyber: "bg-accent text-accent-foreground hover:bg-accent/90 hover:shadow-cyber hover:scale-105 transition-all duration-300",
+        "cyber-outline": "border-2 border-accent text-accent bg-transparent hover:bg-accent hover:text-accent-foreground hover:shadow-cyber transition-all duration-300",
+        glow: "bg-gradient-primary text-primary-foreground shadow-card-cyber hover:shadow-elevated hover:scale-105 transition-all duration-300"
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        lg: "h-11 rounded-md px-8", 
+        xl: "h-12 rounded-lg px-10 text-base",
         icon: "h-10 w-10",
       },
     },

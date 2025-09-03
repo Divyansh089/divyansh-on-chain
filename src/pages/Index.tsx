@@ -1,13 +1,30 @@
 // Update this page (the content is just a fallback if you fail to update the page)
 
+import * as React from "react"
+import { SiteHeader } from "@/components/site-header"
+import { Hero } from "@/components/hero" 
+import { Skills } from "@/components/skills"
+import { FeaturedProjects } from "@/components/featured-projects"
+import { Achievements } from "@/components/achievements"
+import { SiteFooter } from "@/components/site-footer"
+import { StructuredData } from "@/components/structured-data"
+
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <StructuredData type="Person" />
+      <StructuredData type="WebSite" />
+      <div className="min-h-screen bg-background">
+        <SiteHeader />
+        <main>
+          <Hero />
+          <Skills />
+          <FeaturedProjects />
+          <Achievements />
+        </main>
+        <SiteFooter />
       </div>
-    </div>
+    </>
   );
 };
 
