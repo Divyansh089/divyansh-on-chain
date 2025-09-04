@@ -2,64 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Web3 Blockchain Developer Portfolio Design System */
+/* Next-Gen Web3 Portfolio Design System */
 
 @layer base {
   :root {
-    /* Light Mode - Professional with subtle Web3 accents */
-    --background: 220 20% 98%;
-    --foreground: 222 84% 4.9%;
+    /* Light Mode - Futuristic Minimal */
+    --background: 240 10% 2%;
+    --foreground: 60 9% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 84% 4.9%;
+    --card: 240 10% 4%;
+    --card-foreground: 60 9% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 84% 4.9%;
+    --popover: 240 10% 4%;
+    --popover-foreground: 60 9% 98%;
 
-    /* Web3 Primary - Deep blue gradient base */
-    --primary: 230 50% 12%;
-    --primary-foreground: 210 40% 98%;
+    /* Neo-cyber Primary */
+    --primary: 270 100% 60%;
+    --primary-foreground: 240 10% 2%;
 
-    /* Cyber accent - Electric blue */
-    --secondary: 200 100% 85%;
-    --secondary-foreground: 230 50% 12%;
+    /* Electric Secondary */
+    --secondary: 180 100% 50%;
+    --secondary-foreground: 240 10% 2%;
 
-    --muted: 220 15% 95%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 240 10% 8%;
+    --muted-foreground: 240 5% 65%;
 
-    --accent: 190 100% 50%;
-    --accent-foreground: 230 50% 12%;
+    --accent: 300 100% 70%;
+    --accent-foreground: 240 10% 2%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 60 9% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 190 100% 50%;
+    --border: 240 10% 15%;
+    --input: 240 10% 8%;
+    --ring: 270 100% 60%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Web3 Custom Colors */
-    --cyber-blue: 190 100% 50%;
-    --cyber-purple: 260 100% 65%;
-    --cyber-green: 160 100% 50%;
-    --web3-dark: 230 50% 8%;
-    --web3-darker: 230 50% 4%;
+    /* Neo-Web3 Colors */
+    --neon-cyan: 180 100% 50%;
+    --neon-pink: 320 100% 70%;
+    --neon-green: 120 100% 50%;
+    --neon-purple: 270 100% 60%;
+    --neon-orange: 30 100% 60%;
+    --matrix-green: 140 100% 40%;
+    --void-black: 240 10% 2%;
+    --glass-white: 60 9% 98%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(230 50% 12%), hsl(260 100% 25%));
-    --gradient-cyber: linear-gradient(135deg, hsl(190 100% 50%), hsl(260 100% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 20% 98%), hsl(220 15% 95%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(220 15% 98%));
+    /* Advanced Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(270 100% 60%), hsl(320 100% 70%), hsl(180 100% 50%));
+    --gradient-matrix: linear-gradient(135deg, hsl(140 100% 40%), hsl(180 100% 50%));
+    --gradient-void: linear-gradient(135deg, hsl(240 10% 2%), hsl(240 10% 8%));
+    --gradient-glass: linear-gradient(135deg, hsl(240 10% 4% / 0.8), hsl(240 10% 8% / 0.4));
+    --gradient-hologram: conic-gradient(from 0deg, hsl(270 100% 60%), hsl(320 100% 70%), hsl(180 100% 50%), hsl(270 100% 60%));
+    
+    /* Particle System */
+    --particle-glow: radial-gradient(circle, hsl(270 100% 60% / 0.8), transparent 70%);
+    --particle-trail: linear-gradient(90deg, transparent, hsl(180 100% 50% / 0.6), transparent);
+    
+    /* Neural Network */
+    --neural-node: radial-gradient(circle, hsl(320 100% 70% / 0.9), hsl(270 100% 60% / 0.3) 70%, transparent);
+    --neural-connection: linear-gradient(90deg, hsl(180 100% 50% / 0.8), hsl(270 100% 60% / 0.8));
 
-    /* Shadows */
-    --shadow-cyber: 0 0 20px hsl(190 100% 50% / 0.3);
-    --shadow-card: 0 4px 20px hsl(230 50% 12% / 0.1);
-    --shadow-elevated: 0 8px 30px hsl(230 50% 12% / 0.15);
+    /* Advanced Shadows & Glows */
+    --shadow-neon: 0 0 20px hsl(270 100% 60% / 0.5), 0 0 40px hsl(320 100% 70% / 0.3), 0 0 80px hsl(180 100% 50% / 0.1);
+    --shadow-glass: 0 8px 32px hsl(240 10% 2% / 0.3), inset 0 1px 0 hsl(60 9% 98% / 0.1);
+    --shadow-hologram: 0 0 60px hsl(270 100% 60% / 0.4), 0 0 100px hsl(320 100% 70% / 0.2);
+    --shadow-depth: 0 20px 60px hsl(240 10% 2% / 0.5), 0 8px 25px hsl(240 10% 2% / 0.3);
 
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Motion System */
+    --easing-cyber: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --easing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --easing-elastic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-fast: all 0.2s var(--easing-cyber);
+    --transition-smooth: all 0.4s var(--easing-cyber);
+    --transition-bounce: all 0.6s var(--easing-bounce);
 
     --sidebar-background: 0 0% 98%;
 
@@ -76,6 +93,26 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .light {
+    /* Light Mode - Clean Future */
+    --background: 60 9% 98%;
+    --foreground: 240 10% 2%;
+    --card: 60 9% 96%;
+    --card-foreground: 240 10% 2%;
+    --border: 240 10% 85%;
+    --muted: 240 5% 92%;
+    --muted-foreground: 240 5% 45%;
+    
+    /* Light mode gradients */
+    --gradient-void: linear-gradient(135deg, hsl(60 9% 98%), hsl(240 5% 95%));
+    --gradient-glass: linear-gradient(135deg, hsl(60 9% 96% / 0.8), hsl(240 5% 92% / 0.4));
+    
+    /* Softer glows for light mode */
+    --shadow-neon: 0 0 20px hsl(270 100% 60% / 0.2), 0 0 40px hsl(320 100% 70% / 0.1);
+    --shadow-glass: 0 8px 32px hsl(240 10% 2% / 0.1), inset 0 1px 0 hsl(60 9% 98% / 0.5);
+    --shadow-hologram: 0 0 60px hsl(270 100% 60% / 0.15), 0 0 100px hsl(320 100% 70% / 0.08);
   }
 
   .dark {
@@ -135,47 +172,122 @@
 }
 
 @layer components {
-  /* Gradient Text Utilities */
-  .gradient-text {
-    @apply bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent;
+  /* Advanced Text Effects */
+  .text-hologram {
+    background: var(--gradient-hologram);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: hologram-shift 4s linear infinite;
   }
 
-  .gradient-cyber {
-    background: var(--gradient-cyber);
+  .text-matrix {
+    background: var(--gradient-matrix);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* Card Effects */
-  .card-cyber {
-    background: var(--gradient-card);
-    border: 1px solid hsl(var(--border));
-    box-shadow: var(--shadow-card);
+  .text-cosmic {
+    background: var(--gradient-cosmic);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: cosmic-pulse 3s ease-in-out infinite;
+  }
+
+  /* Glass Morphism */
+  .glass-card {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / 0.2);
+    box-shadow: var(--shadow-glass);
     transition: var(--transition-smooth);
   }
 
-  .card-cyber:hover {
-    box-shadow: var(--shadow-elevated);
-    transform: translateY(-2px);
+  .glass-card:hover {
+    box-shadow: var(--shadow-hologram);
+    transform: translateY(-4px) scale(1.02);
+    border-color: hsl(var(--primary) / 0.4);
   }
 
-  /* Glow Effects */
-  .glow-cyber {
-    box-shadow: var(--shadow-cyber);
+  /* Neon Effects */
+  .neon-glow {
+    box-shadow: var(--shadow-neon);
+    border: 1px solid hsl(var(--primary) / 0.5);
   }
 
-  /* Animation Classes */
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
+  .neon-pulse {
+    animation: neon-pulse 2s ease-in-out infinite alternate;
   }
 
-  .animate-pulse-slow {
-    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  /* Particle System */
+  .particle-field::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 20% 80%, hsl(var(--neon-cyan) / 0.1) 1px, transparent 1px),
+      radial-gradient(circle at 80% 20%, hsl(var(--neon-pink) / 0.1) 1px, transparent 1px),
+      radial-gradient(circle at 40% 40%, hsl(var(--neon-purple) / 0.1) 1px, transparent 1px);
+    background-size: 50px 50px, 80px 80px, 60px 60px;
+    animation: particle-drift 20s linear infinite;
   }
 
-  .animate-slide-up {
-    animation: slideUp 0.6s ease-out;
+  /* Neural Network */
+  .neural-bg {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .neural-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      linear-gradient(90deg, transparent 49%, hsl(var(--primary) / 0.1) 50%, transparent 51%),
+      linear-gradient(0deg, transparent 49%, hsl(var(--secondary) / 0.1) 50%, transparent 51%);
+    background-size: 100px 100px;
+    animation: neural-pulse 8s ease-in-out infinite;
+  }
+
+  /* Holographic Border */
+  .holo-border {
+    position: relative;
+    background: var(--gradient-void);
+  }
+
+  .holo-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: var(--gradient-hologram);
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    animation: holo-rotate 4s linear infinite;
+  }
+
+  /* Advanced Animation Classes */
+  .animate-float-slow {
+    animation: float-complex 12s ease-in-out infinite;
+  }
+
+  .animate-pulse-neon {
+    animation: pulse-neon 3s ease-in-out infinite;
+  }
+
+  .animate-glitch {
+    animation: glitch 2s ease-in-out infinite;
+  }
+
+  .animate-matrix-rain {
+    animation: matrix-rain 4s linear infinite;
+  }
+
+  .animate-cyber-scan {
+    animation: cyber-scan 6s ease-in-out infinite;
   }
 
   /* Custom Scrollbar */
@@ -198,44 +310,101 @@
 }
 
 @layer utilities {
-  /* Custom Keyframes */
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0px);
+  /* Next-Gen Keyframes */
+  @keyframes float-complex {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-15px) rotate(5deg); }
+    50% { transform: translateY(-10px) rotate(0deg); }
+    75% { transform: translateY(-20px) rotate(-5deg); }
+  }
+
+  @keyframes pulse-neon {
+    0%, 100% { 
+      box-shadow: var(--shadow-neon);
+      filter: brightness(1);
     }
-    50% {
-      transform: translateY(-10px);
+    50% { 
+      box-shadow: var(--shadow-hologram);
+      filter: brightness(1.2);
     }
   }
 
-  @keyframes slideUp {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
+  @keyframes glitch {
+    0%, 100% { transform: translateX(0); }
+    10% { transform: translateX(-2px) skew(-0.5deg); }
+    20% { transform: translateX(2px) skew(0.5deg); }
+    30% { transform: translateX(-1px) skew(-0.2deg); }
+    40% { transform: translateX(1px) skew(0.2deg); }
+    50% { transform: translateX(0); }
+  }
+
+  @keyframes matrix-rain {
+    0% { transform: translateY(-100%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+  }
+
+  @keyframes cyber-scan {
+    0%, 100% { transform: translateX(-100%); }
+    50% { transform: translateX(100vw); }
+  }
+
+  @keyframes hologram-shift {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+  }
+
+  @keyframes cosmic-pulse {
+    0%, 100% { 
+      filter: brightness(1) saturate(1);
+      transform: scale(1);
     }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
+    50% { 
+      filter: brightness(1.3) saturate(1.2);
+      transform: scale(1.02);
     }
   }
 
-  @keyframes shimmer {
-    0% {
-      background-position: -200% 0;
-    }
-    100% {
-      background-position: 200% 0;
-    }
+  @keyframes particle-drift {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-10px, -10px); }
+    50% { transform: translate(10px, -20px); }
+    75% { transform: translate(-5px, -15px); }
+    100% { transform: translate(0, 0); }
   }
 
-  .shimmer {
-    background: linear-gradient(
-      90deg,
-      transparent,
-      hsl(var(--accent) / 0.2),
-      transparent
-    );
-    background-size: 200% 100%;
-    animation: shimmer 2s infinite;
+  @keyframes neural-pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
+  }
+
+  @keyframes holo-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes neon-pulse {
+    0% { box-shadow: var(--shadow-neon); }
+    100% { box-shadow: var(--shadow-hologram); }
+  }
+
+  /* Interactive Utilities */
+  .magnetic-hover {
+    transition: var(--transition-smooth);
+  }
+
+  .magnetic-hover:hover {
+    transform: scale(1.05) rotate(2deg);
+  }
+
+  .depth-hover {
+    transition: var(--transition-bounce);
+  }
+
+  .depth-hover:hover {
+    transform: translateY(-8px) translateZ(20px);
+    box-shadow: var(--shadow-depth);
   }
 }

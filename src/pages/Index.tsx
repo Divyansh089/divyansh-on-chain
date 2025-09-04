@@ -2,9 +2,10 @@
 
 import * as React from "react"
 import { SiteHeader } from "@/components/site-header"
-import { Hero } from "@/components/hero" 
-import { Skills } from "@/components/skills"
-import { FeaturedProjects } from "@/components/featured-projects"
+import { HeroRedesigned } from "@/components/hero-redesigned"
+import { SkillsRedesigned } from "@/components/skills-redesigned"
+import { ProjectsRedesigned } from "@/components/projects-redesigned"
+import { NavRedesigned } from "@/components/nav-redesigned"
 import { Achievements } from "@/components/achievements"
 import { SiteFooter } from "@/components/site-footer"
 import { StructuredData } from "@/components/structured-data"
@@ -14,12 +15,12 @@ const Index = () => {
     <>
       <StructuredData type="Person" />
       <StructuredData type="WebSite" />
-      <div className="min-h-screen bg-background">
-        <SiteHeader />
+      <div className="min-h-screen bg-gradient-void">
+        <NavRedesigned />
         <main>
-          <Hero />
-          <Skills />
-          <FeaturedProjects />
+          <HeroRedesigned />
+          <SkillsRedesigned />
+          <ProjectsRedesigned />
           <Achievements />
         </main>
         <SiteFooter />
