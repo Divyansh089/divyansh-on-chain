@@ -9,6 +9,7 @@ import { NavRedesigned } from "@/components/nav-redesigned"
 import { Achievements } from "@/components/achievements"
 import { SiteFooter } from "@/components/site-footer"
 import { StructuredData } from "@/components/structured-data"
+import AboutRedesigned from "@/components/about-redesigned"
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <NavRedesigned />
         <main>
           <HeroRedesigned />
+          <AboutRedesigned />
           <SkillsRedesigned />
           <ProjectsRedesigned />
           <Achievements />
